@@ -1,0 +1,26 @@
+{
+  "name": "acp-verify",
+  "version": "0.1.0",
+  "description": "Independent verdict re-verifier for the Agent Commerce Protocol (ERC-8183).",
+  "type": "module",
+  "license": "MIT",
+  "author": "aiport",
+  "homepage": "https://github.com/aiport-ops/aiport-verify",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiport-ops/aiport-verify.git"
+  },
+  "bin": {
+    "acp-verify": "src/cli.ts"
+  },
+  "scripts": {
+    "verify": "node --experimental-strip-types src/cli.ts"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@virtuals-protocol/acp-node-v2": "^0.1.7",
+    "viem": "^2.50.4"
+  }
+}
